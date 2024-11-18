@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <title>Block and Inline element</title>
+    <style>
+        h1, h2, h3 {
+            display: block;
+        }
+        
+        p, span {
+            display: inline;
+        }
+        
+        p {
+            margin-bottom: 10px;
+        }
+        
+        span {
+            margin-right: 10px;
+        }
+        
+        h3 {
+            margin-top: 20px;
+        }
+        
+        h3, p, span {
+            font-weight: bold;
+        }
+        
+        h3, p {
+            color: red;
+        }
+        
+        span {
+            color: blue;
+        }
+        
+        h3 {
+            background-color: lightgray;
+        }
+        
+        p {
+            background-color: lightblue;
+        }
+        
+        span {
+            background-color: lightgreen;
+        }
+        
+        h3, p, span {
+            padding: 10px;
+        }
+        
+        h3, p, span {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Block Element</h1>
+    <p>This is a paragraph.</p>
+    
+    <h2>Inline Element</h2>
+    <span>This is a span.</span>
+    
+    <h3>Block Element with Inline Element</h3>
+    <p>This is a paragraph with <span>an inline element</span>.</p>    
+</body>
+</html>
