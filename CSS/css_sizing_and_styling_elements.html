@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <style>
+            img{
+                border: 5px solid darkblue;
+            }
+            body {
+                font: 1.2em sans-serif;
+            }
+            .wrapper{
+                display: flex;
+            }
+            .wrapper > * {
+                margin: 20px;
+            }
+            .box {
+                border: 5px solid darkblue;
+                height: 100px;
+                width: 200px;
+            }
+            .box1{
+                border: 5px solid darkblue;
+                min-height: 100px;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src = "https://mdn.github.io/shared-assets/images/examples/big-star.png" alt = "star" />
+        <div class="wrapper">
+            <div class="box"></div>
+            <div class="box">
+                These boxes both have a height set, this box has content in it which will need more space than the assigned height, and so we get overflow.
+            </div>
+            <div class="box1"></div>
+            <div class="box1">
+                These boxes both have a height set, this box has content in it which will need more space than the assigned height, and so we get overflow.
+            </div>
+        </div>
+    </body>
+</html>
