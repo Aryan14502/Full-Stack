@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <title>Transition and Animation</title>
+    <style>
+        img {
+            width: 40px;
+            opacity: 0.4;
+            transition: width 3s linear, opacity 4s ease-out, transform 5s;
+        }
+
+        img:hover {
+            width: 100px;
+            opacity: 1;
+            transform: rotate(45deg);
+        }
+                .font{
+            font-size: 1rem;
+            transition: font-size 5s;
+        }
+        .font:hover{
+            font-size: 7rem;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://mdn.github.io/shared-assets/images/examples/big-star.png" alt="image" />
+    <div class="font">
+        <p>
+            Hi, my name is Aryan Mori
+        </p>
+    </div>
+</body>
+</html>
