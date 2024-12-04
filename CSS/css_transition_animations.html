@@ -2,7 +2,7 @@
 <head>
     <title>Transition and Animation</title>
     <style>
-        img {
+        /* img {
             width: 40px;
             opacity: 0.4;
             transition: width 3s linear, opacity 4s ease-out, transform 5s;
@@ -12,13 +12,30 @@
             width: 100px;
             opacity: 1;
             transform: rotate(45deg);
-        }
-                .font{
+        } */
+        .font{
             font-size: 1rem;
             transition: font-size 5s;
         }
         .font:hover{
             font-size: 7rem;
+        }
+        @keyframes change-color {
+            /* The first keyframe */
+            from {background-color: purple;} 
+            /* The last keyframe */
+            to {background-color: yellow;} 
+        }
+        img {
+            animation-name: shape-image;
+            animation-duration: 7s;
+        }
+
+        @keyframes shape-image {
+            0% { width: 40px; border: 5px solid blue;}
+            40% { width: 70px; border: 1px solid red; border-radius: 50%;}
+            75% { width: 50px; border: 30px solid green;}
+            100% { width: 100px; border: 7px solid purple;}
         }
     </style>
 </head>
