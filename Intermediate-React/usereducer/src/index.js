@@ -10,11 +10,11 @@ function reducer(state, action) {
     case "decrement":
       return { ...state, count: state.count - 1 };
     default:
-      return state; 
+      return state;
   }
 }
 
-const initialState = { count: 0 }; // Define the initial state
+const initialState = { count: 0 };
 
 function UseReducer() {
   const [state, dispatch] = useReducer(reducer, initialState);
